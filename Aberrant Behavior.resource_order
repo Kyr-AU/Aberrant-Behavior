@@ -4,5 +4,7 @@
     {"name":"Objects","order":9,"path":"folders/Objects.yy",},
     {"name":"Rooms","order":10,"path":"folders/Rooms.yy",},
   ],
-  "ResourceOrderSettings": [],
+  "ResourceOrderSettings": [
+    {"name":"Script1","order":11,"path":"scripts/Script1/Script1.yy",},
+  ],
 }
