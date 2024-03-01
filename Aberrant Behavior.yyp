@@ -22,8 +22,12 @@
     "IDEVersion": "2023.11.1.129",
   },
   "resources": [
-    {"id":{"name":"Object1","path":"objects/Object1/Object1.yy",},},
+    {"id":{"name":"spr_player_slug_up","path":"sprites/spr_player_slug_up/spr_player_slug_up.yy",},},
+    {"id":{"name":"obj_player_slug","path":"objects/obj_player_slug/obj_player_slug.yy",},},
+    {"id":{"name":"spr_player_slug_right","path":"sprites/spr_player_slug_right/spr_player_slug_right.yy",},},
     {"id":{"name":"Script1","path":"scripts/Script1/Script1.yy",},},
+    {"id":{"name":"spr_player_slug_left","path":"sprites/spr_player_slug_left/spr_player_slug_left.yy",},},
+    {"id":{"name":"spr_player_slug_down","path":"sprites/spr_player_slug_down/spr_player_slug_down.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "RoomOrderNodes": [
