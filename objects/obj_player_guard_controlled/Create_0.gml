@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+instance_destroy(obj_player_slug)
 #region stats system v1
 
 hp_max = 500;

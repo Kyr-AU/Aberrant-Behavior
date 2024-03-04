@@ -20,3 +20,11 @@ if point_in_rectangle(mouse_x, mouse_y, 277, 101, 286, 110)
 	}
 }
 
+
+if keyboard_check_pressed(vk_space)
+{
+	room_goto_previous()
+	time_source_resume(time_source_global)
+	instance_create_layer(obj_player_slug.x, obj_player_slug.y, "layer_play", obj_player_guard_controlled)
+	
+}
