@@ -14,7 +14,7 @@ global.previous_room = rm_level_one_thegatehouse;  /// set this to be starting s
 
 #region Global NPC Stats
 
-
-
+global.mind_wipe = false
+global.motor_control = false
 
 #endregion

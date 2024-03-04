@@ -1,45 +1,28 @@
 
 draw_self()
 
-#region Exit Game Confirmation Button 
 
 
-draw_text_ext_transformed_color(240, 154, "Are you sure?", 12, 300, 1.5, 1.5, 0, #00ff41, #00ff41, #00ff41, #00ff41, 1)
-
-// Draw the confirm exit button
-draw_text_ext_transformed_color(250, 174, "Yes", 12, 300, 2, 2, 0, #00ff41, #00ff41, #00ff41, #00ff41, 1)
-
-// Detect if mouse hovering button and highlight
-if point_in_rectangle(mouse_x, mouse_y,250,174,297,197)
+if point_in_rectangle(mouse_x, mouse_y, 296, 66, 310, 80)
 {
-	draw_text_ext_transformed_color(226, 174, "> Yes <", 12, 300, 2, 2, 0, #00ff41, #00ff41, #00ff41, #00ff41, 1)
+	draw_rectangle_color(298, 68, 307, 77, c_fuchsia, c_fuchsia, c_fuchsia, c_fuchsia, true)
+	draw_rectangle_color(298, 68, 307, 77, c_fuchsia, c_fuchsia, c_fuchsia, c_fuchsia, false)
 }
 
-// Detect if mouse clicks button and execute
-if point_in_rectangle(mouse_x, mouse_y,250,174,297,197) && device_mouse_check_button_pressed(0,mb_left)
+if global.mind_wipe = true
 {
-	game_end(); // this room checks game_end() this room should time pause
+	draw_rectangle_color(298, 68, 307, 77, c_maroon, c_maroon, c_maroon, c_maroon, false)
 }
 
-#endregion
 
 
-#region Exit Game Cancel button 
-
-// Draw the cancel exit button
-draw_text_ext_transformed_color(350, 174, "No", 12, 300, 2, 2, 0, #00ff41, #00ff41, #00ff41, #00ff41, 1)
-
-// Detect if mouse hovering button and highlight
-if point_in_rectangle(mouse_x, mouse_y,350,178,381,197)
+if point_in_rectangle(mouse_x, mouse_y, 277, 101, 286, 110)
 {
-	draw_text_ext_transformed_color(326, 174, "> No <", 12, 300, 2, 2, 0, #00ff41, #00ff41, #00ff41, #00ff41, 1)
+	draw_rectangle_color(277, 101, 286, 110, c_fuchsia, c_fuchsia, c_fuchsia, c_fuchsia, true)
+	draw_rectangle_color(277, 101, 286, 110, c_fuchsia, c_fuchsia, c_fuchsia, c_fuchsia, false)
 }
 
-// Detect if mouse clicks button and execute return to room
-if point_in_rectangle(mouse_x, mouse_y,350,178,381,197) && device_mouse_check_button_pressed(0,mb_left)
+if global.motor_control = true
 {
-	room_goto(global.previous_room) // return to previous room
-	time_source_resume(time_source_global) // restore timeflow
+	draw_rectangle_color(277, 101, 286, 110, c_maroon, c_maroon, c_maroon, c_maroon, false)
 }
-
-#endregion

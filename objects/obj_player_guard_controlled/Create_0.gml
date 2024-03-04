@@ -17,7 +17,15 @@ shield_duration = 15;
 #endregion
 
 
+
 #region Variables
+
+
+if global.motor_control = true
+{
+	move_speed = 8;
+}
+
 
 
 

@@ -9,6 +9,5 @@ if point_in_circle(nearest_controllable.x, nearest_controllable.y, obj_player_sl
 	obj_player_slug.x = nearest_controllable.x
 	obj_player_slug.y = nearest_controllable.y
 	room_goto(rm_menu_brain)
-	
 }
 
