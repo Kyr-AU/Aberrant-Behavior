@@ -1,6 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 instance_destroy(obj_player_slug)
+global.player = obj_player_guard_controlled
+room_goto(rm_menu_brain)
+
 #region stats system v1
 
 hp_max = 500;

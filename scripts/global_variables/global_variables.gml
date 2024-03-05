@@ -10,8 +10,9 @@ global.key_pressed_esc = keyboard_check_pressed(vk_escape);  // this doesnt work
 
 global.previous_room = rm_level_one_thegatehouse;  /// set this to be starting screen and update when we move
 
-
-
+global.player = obj_player_slug
+global.player_target = obj_player_slug
+global.current_room = rm_level_one_thegatehouse
 #region Global NPC Stats
 
 global.mind_wipe = false

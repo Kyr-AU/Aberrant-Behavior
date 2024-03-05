@@ -40,17 +40,17 @@ if key_W || key_S || key_A || key_D = true
 {
 	if key_W = true
 	{
-		sprite_index = spr_player_slug_move_up
+		sprite_index = spr_npc_guard_controlled
 	}
 	else
 	{
-	sprite_index = spr_player_slug_move_up
+	sprite_index = spr_npc_guard_controlled
 	}
 }
 
 else
 {
-	sprite_index = spr_player_slug_move_up
+	sprite_index = spr_npc_guard_controlled
 }
 
 //switch

@@ -1,18 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_npc_guard",
+  "%Name":"obj_player_parent",
   "eventList":[],
   "managed":true,
-  "name":"obj_npc_guard",
+  "name":"obj_player_parent",
   "overriddenProperties":[],
   "parent":{
-    "name":"Guard",
-    "path":"folders/Objects/NPCs/Guard.yy",
+    "name":"Player",
+    "path":"folders/Objects/Player.yy",
   },
-  "parentObjectId":{
-    "name":"obj_npc_parent_controllable",
-    "path":"objects/obj_npc_parent_controllable/obj_npc_parent_controllable.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,13 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_npc_guard",
-    "path":"sprites/spr_npc_guard/spr_npc_guard.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
-  "tags":[
-    "Controllable",
-  ],
   "visible":true,
 }

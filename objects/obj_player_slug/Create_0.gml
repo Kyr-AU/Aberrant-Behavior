@@ -3,6 +3,8 @@
 
 #region stats system v1
 
+global.player = obj_player_slug
+
 hp_max = 500;
 hp = hp_max;
 hp_regen = 5;
