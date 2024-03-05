@@ -19,3 +19,7 @@ global.mind_wipe = false
 global.motor_control = false
 
 #endregion
+
+
+
+// function brain reset to toggle all brain stats off when slug returns or body jumps
