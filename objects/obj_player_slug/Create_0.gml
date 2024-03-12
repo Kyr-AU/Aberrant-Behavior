@@ -3,7 +3,6 @@
 
 #region stats system v1
 
-global.player = obj_player_slug
 
 hp_max = 500;
 hp = hp_max;
@@ -21,7 +20,7 @@ shield_duration = 15;
 
 #region Variables
 
-
+global.blinded = true
 
 
 #endregion

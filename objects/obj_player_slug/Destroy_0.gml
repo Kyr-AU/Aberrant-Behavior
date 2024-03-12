@@ -4,3 +4,4 @@
 
 // throw game over splash
 
+global.blinded = false
