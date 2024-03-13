@@ -8,5 +8,6 @@
 // if aggro is above 30 && target unseen, search
 
 
-move_towards_point(obj_player_parent.x, obj_player_parent.y, move_speed)
+//move_towards_point(obj_player_parent.x, obj_player_parent.y, move_speed)
+
 

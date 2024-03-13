@@ -1,0 +1,2 @@
+some brain stats need to be stored at an instance level, so that certain stats cant be overridden eg. mind wipe.
+
