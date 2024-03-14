@@ -107,10 +107,3 @@ if (global.brain_array[0] + global.brain_array[1] + global.brain_array[2] + glob
 	room_goto(rm_end_menu)
 }
 
-if keyboard_check_pressed(vk_escape)
-{
-	time_source_resume(time_source_global)
-	room_goto(global.current_room)
-	
-	
-}

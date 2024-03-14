@@ -99,7 +99,7 @@ if global.pain = true
 	draw_rectangle_color(328, 221, 337, 230, c_maroon, c_maroon, c_maroon, c_maroon, false)
 }
 
-draw_text_ext_transformed_color(200, 320, string("Hit Escape to continue"), 12, 320, 1, 1, 0, #E09cff, #E09cff, #E09cff, #E09cff, 1)
+
 #endregion
 
 
