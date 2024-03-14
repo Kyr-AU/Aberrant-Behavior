@@ -20,6 +20,8 @@ shield_duration = 15;
 
 
 #region Variables
+global.visibility = 150
+
 
 
 if global.motor_control = true

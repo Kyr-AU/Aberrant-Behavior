@@ -2,7 +2,7 @@
 // You can write your code in this editor
 draw_self()
 
-if abs(angle_difference(point_direction(x, y, obj_player_parent.x, obj_player_parent.y), direction)) < 45 && point_distance(x, y, obj_player_parent.x, obj_player_parent.y) < 100
+if abs(angle_difference(point_direction(x, y, obj_player_parent.x, obj_player_parent.y), direction)) < 45 && point_distance(x, y, obj_player_parent.x, obj_player_parent.y) < global.visibility
 {
 	if collision_line(x, y, obj_player_parent.x, obj_player_parent.y, obj_collision_box, false, true) = noone
 	{

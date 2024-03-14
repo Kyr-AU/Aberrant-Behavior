@@ -21,10 +21,11 @@ global.player_previous = obj_player_slug
 global.player_target = obj_player_slug
 global.current_room = rm_level_one_thegatehouse
 
-#region Global NPC Stats
+#region Global Stats
 
 global.brain_array = [0,0,0,0,0];
 
+global.visibility = 50
 
 global.mind_wipe = false
 global.motor_control = false

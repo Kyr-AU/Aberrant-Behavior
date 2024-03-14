@@ -3,19 +3,30 @@
 
 
 
-if can_see = true && global.suspicion < 40.1 && paused = false
+if can_see = true && global.suspicion < 40 && stunned = false
 {
 	global.suspicion += 0.01
 	could_see = true
 	interact_chance = irandom_range(1,20)
-	if interact_chance = 1 && global.speech = true
+	if interact_chance = 1 && global.speech = true && convinced = false
 		{
 			instance_create_depth(x, y, -2000, obj_speech_box_guard)  //var struct might be useful
-			interact_step += 1
+		}
+	if global.speech = true && dismissive = true
+		{
+			instance_create_depth(x, y, -2000, obj_speech_box_guard_dismissive)  //var struct might be useful
+		}
+	if global.speech = false && object_exists(obj_player_guard_controlled)
+		{
+			instance_create_depth(x, y, -2000, obj_speech_box_guard_nospeech)
+		}
+	if !object_exists(obj_player_guard_controlled)
+		{
+			angry = true
 		}
 }
 
-if can_see = true && global.suspicion > 40
+if can_see = true && global.suspicion > 40.1 && stunned = false
 {
 	global.suspicion += 0.1
 	move_speed = 1
@@ -31,3 +42,7 @@ if could_see = true && can_see = false
 }
 
 
+if angry = true && global.suspicion < 40.1 && stunned = false
+{
+	global.suspicion = 40.2
+}
