@@ -37,8 +37,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_npc_guard_controlled",
-    "path":"sprites/spr_npc_guard_controlled/spr_npc_guard_controlled.yy",
+    "name":"spr_npc_guard_controlled_down",
+    "path":"sprites/spr_npc_guard_controlled_down/spr_npc_guard_controlled_down.yy",
   },
   "spriteMaskId":null,
   "visible":true,

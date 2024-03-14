@@ -5,7 +5,7 @@
 
 if can_see = true && global.suspicion < 40 && stunned = false
 {
-	global.suspicion += 0.01
+	global.suspicion += 0.3
 	could_see = true
 	interact_chance = irandom_range(1,20)
 	if interact_chance = 1 && global.speech = true && convinced = false
@@ -29,7 +29,7 @@ if can_see = true && global.suspicion < 40 && stunned = false
 if can_see = true && global.suspicion > 40.1 && stunned = false
 {
 	global.suspicion += 0.1
-	move_speed = 1
+	move_speed = 2.9
 	move_towards_point(obj_player_parent.x, obj_player_parent.y, move_speed)
 	could_see = true
 }
@@ -42,7 +42,7 @@ if could_see = true && can_see = false
 }
 
 
-if angry = true && global.suspicion < 40.1 && stunned = false
+if angry = true && global.suspicion < 40.1 && stunned = false && point_distance(x,y,obj_player_parent.x,obj_player_parent.y) < 100
 {
 	global.suspicion = 40.2
 }

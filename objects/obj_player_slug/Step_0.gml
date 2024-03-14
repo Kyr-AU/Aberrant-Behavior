@@ -42,16 +42,25 @@ if key_W || key_S || key_A || key_D = true
 	{
 		sprite_index = spr_player_slug_move_up
 	}
-	else
+	if key_S = true
 	{
-	sprite_index = spr_player_slug_move_up
+		sprite_index = spr_player_slug_down
 	}
+	if key_A = true
+	{
+		sprite_index = spr_player_slug_left
+	}
+	if key_D = true
+	{
+		sprite_index = spr_player_slug_right
+	}
+	//else
+	//{
+	//sprite_index = spr_player_slug_move_up
+	//}
 }
 
-else
-{
-	sprite_index = spr_player_slug_move_up
-}
+
 
 //switch
 

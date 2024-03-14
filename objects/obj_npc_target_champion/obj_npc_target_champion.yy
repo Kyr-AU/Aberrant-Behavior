@@ -1,15 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_npc_target_baron",
+  "%Name":"obj_npc_target_champion",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_npc_target_baron",
+  "name":"obj_npc_target_champion",
   "overriddenProperties":[],
   "parent":{
-    "name":"Baron",
-    "path":"folders/Objects/NPCs/Baron.yy",
+    "name":"Champion",
+    "path":"folders/Objects/NPCs/Champion.yy",
   },
   "parentObjectId":{
     "name":"obj_npc_parent_controllable",
@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_npc_target_baron",
-    "path":"sprites/spr_npc_target_baron/spr_npc_target_baron.yy",
+    "name":"spr_npc_target_champion",
+    "path":"sprites/spr_npc_target_champion/spr_npc_target_champion.yy",
   },
   "spriteMaskId":null,
   "tags":[

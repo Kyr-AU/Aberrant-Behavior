@@ -21,8 +21,15 @@ if instance_exists(obj_player_slug)
 		global.player_previous = global.player
 		global.player = instance_create_layer(obj_player_slug.x, obj_player_slug.y, "layer_play", global.player_target.who_am_i)
 		instance_destroy(global.player_previous)
-		
-		room_goto(rm_menu_brain)
+		if global.player_target.who_am_i = obj_npc_target_champion
+			{
+				room_goto(rm_menu_brain2)
+			}
+		else
+			{				
+				
+				room_goto(rm_menu_brain)
+			}
 	}
 }
 
@@ -40,6 +47,12 @@ else
 	instance_create_layer(obj_player_parent.x, obj_player_parent.y, "layer_play", obj_player_slug)
 	instance_destroy(global.player)
 	global.player = obj_player_slug
+	global.mind_wipe = false
+	global.motor_control = false
+	global.memory = false
+	global.speech = false
+	global.pain = false
+	global.brain_array = [0,0,0,0,0]
 	
 }
 

@@ -1,6 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if global.motor_control = true
+{
+	move_speed = 8;
+}
+else 
+{
+	move_speed = 3;
+}
+
 var key_W = keyboard_check(ord("W"));
 var key_S = keyboard_check(ord("S"));
 var key_A = keyboard_check(ord("A"));
@@ -40,17 +49,20 @@ if key_W || key_S || key_A || key_D = true
 {
 	if key_W = true
 	{
-		sprite_index = spr_npc_guard_controlled
+		sprite_index = spr_npc_guard_controlled_up
 	}
-	else
+	if key_S = true
 	{
-	sprite_index = spr_npc_guard_controlled
+		sprite_index = spr_npc_guard_controlled_down
 	}
-}
-
-else
-{
-	sprite_index = spr_npc_guard_controlled
+	if key_A = true
+	{
+		sprite_index = spr_npc_guard_controlled_left
+	}
+	if key_D = true
+	{
+		sprite_index = spr_npc_guard_controlled_right
+	}
 }
 
 //switch

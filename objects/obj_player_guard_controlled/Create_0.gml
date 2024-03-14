@@ -24,11 +24,6 @@ global.visibility = 150
 
 
 
-if global.motor_control = true
-{
-	move_speed = 8;
-}
-
 
 
 
